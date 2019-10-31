@@ -1,0 +1,192 @@
+<html>
+<head><title></title>
+
+<style>
+@import url("style.css");
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  position:relative;
+  text-align:center;
+  top:40px;
+}
+
+.topnav input[type=text] {
+  width:40%;
+  padding: 12px 20px;
+  margin:8px 0;
+  display:inline-block;
+  border: 1px solid #ccc;
+  border-radius:4px;
+  box-sizing: border-box;
+}
+
+.topnav .search-container button {
+  float: none;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn{
+  border-radius:12px;
+   background-color:grey;
+   border:none;
+   color:white;
+   text-decoration:none;
+   font-size:18px;
+   cursor:pointer;
+   padding:16px;
+   
+}
+.dt
+{
+   postion:relative;
+   top:20%;
+   left:70%;
+}
+.topnav .search-container button:hover {
+  background: yellow;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+
+}
+</style>
+<link rel="stylesheet" href="css/theme-yellow.css" />
+<link rel="stylesheet" href="css/style2.css" />
+
+</head>
+<body background="kevin.jpg">
+
+<div class="topnv">
+  <a class="active" href="index.html">Home</a>
+  <a href="contacus.html">Contact</a>
+  <a href="#">About us</a>
+</div>
+
+<div class="topnav">
+ 
+  <div class="search-container">
+    <form name="frem1" action="cabs.html" onsubmit="return validate()" method="post">
+      <input type="text" placeholder="Enter pick up point..." name="pick"><br/>
+      <input type="text" placeholder="Enter drop point..." name="drop"><br/>
+      <h3 style="color:white;">Enter Date:</h3><input type="date" name="date" required><br/>
+      <h3 style="color:white;">Enter Time:</h3><input type="time" name="time" required><br/><br/>
+      <button class="btn">Search</button>
+    </form>
+  </div>
+</div>
+<a href="login_sign.html"><img src="avatar.png" alt="Avatar" class="avatar"></a>
+<br/><br/>
+<h1 align="right"> Al-SAFAR</h1><img width="200px" height="200px" src="logo.png"/><h2 align="left">Cab Services</h2>
+
+
+<footer class="footer black" role="contentinfo">
+		<div class="wrap">
+			<div class="row">
+				<!-- Column -->
+				<div class="one-half">
+					<h6>About us</h6>
+					<p>Welcome to Alsafar. We Provide Cab.</p>
+				</div>
+				<!-- //Column -->
+				
+				<!-- Column -->
+				<div class="one-fourth">
+					<h6>Need help?</h6>
+					<p>Contact us via phone or email:</p>
+					<p class="contact-data"><span class="ico phone"></span> +91678679879</p>
+					<p class="contact-data"><span class="ico email"></span> <a href="mailto:help@transfers.com">help@alsafar.com</a></p>
+				</div>
+				<!-- //Column -->
+				
+				<!-- Column -->
+				<div class="one-fourth">
+					<h6>Follow us</h6>
+					<ul class="social">
+						<li class="facebook"><a href="#" title="facebook">facebook</a></li>
+						<li class="twitter"><a href="#" title="twitter">twitter</a></li>
+						<li class="gplus"><a href="#" title="gplus">google plus</a></li>
+						<li class="linkedin"><a href="#" title="linkedin">linkedin</a></li>
+						<li class="vimeo"><a href="#" title="vimeo">vimeo</a></li>
+						<li class="pinterest"><a href="#" title="pinterest">pinterest</a></li>
+					</ul>
+				</div>
+				<!-- //Column -->
+			</div>
+			
+			<div class="copy">
+				<p>Copyright 2016,Alsafar. All rights reserved. </p>
+				
+				<nav role="navigation" class="foot-nav">
+					<ul>
+						<li><a href="#" title="Home">Home</a></li>
+						<li><a href="#" title="Blog">Blog</a></li>
+						<li><a href="#" title="About us">About us</a></li>
+						<li><a href="#" title="Contact us">Contact us</a></li>
+						<li><a href="#" title="Terms of use">Terms of use</a></li>
+						<li><a href="#" title="Help">Help</a></li>
+						<li><a href="#" title="For partners">For partners</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</footer>
+	<!-- //Footer -->
+
+<script>
+function validate()
+{
+    
+    var a=document.forms["frem1"]["pick"].value;
+    var b=document.forms["frem1"]["drop"].value;
+    if(a==""||a==null)
+    {
+        alert("Enter a pick up point");
+        return false;
+    }
+    if(b==""||b==null)
+    {
+        alert("Enter a drop point");
+        return false;
+    }
+
+    
+}
+</script>
+</body>
+</html>

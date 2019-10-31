@@ -1,0 +1,288 @@
+<html>
+<head>
+<title>Final Process</title>
+<style>
+input[type=text]
+{
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=text],input[type=email]
+{
+  width:40%;
+  padding: 12px 20px;
+  margin:8px 0;
+  display:inline-block;
+  border: 1px solid #ccc;
+  border-radius:4px;
+  box-sizing: border-box;
+}
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  font-family:consolas;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: yellow;
+}
+
+.top
+{   background-color:grey;
+    height:160px;
+    width:100%;
+    text-align:center;
+}
+.lago
+{
+   width:130px;
+   height:100px;
+}
+.anch
+{
+    text-decoration:none;
+    cursor:pointer;
+    font-size:38pt;
+    font-family: 'Righteous', cursive;
+    color:dark blue;
+}
+.fram1
+{
+   
+   display:grid;
+   grid-template-columns:180px 200px 600px ;
+   align-items:start;
+   justify-content:space-between;
+   border:solid 1px black;
+   border-radius:10px;
+}
+.fram2
+{
+   
+   border:solid 1px black;
+   border-radius:10px;
+}
+.bton
+{
+   border-radius:12px;
+   background-color:blue;
+   border:none;
+   color:white;
+   text-decoration:none;
+   font-size:18px;
+   cursor:pointer;
+   padding:16px;
+   position:relative;
+   left:0%;
+}
+</style>
+<link rel="stylesheet" href="css/theme-yellow.css" />
+<link rel="stylesheet" href="css/style3.css" />
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="top">
+<a href="index.html" class="anch"> Al-SAFAR <img class="lago" src="logo.png"/></a>
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="contacus.html">Contact</a>
+  <a href="aboutus.html">About us</a>
+</div>
+</div>
+
+<div class="fram1">
+<div>
+<p style="font-weight:bold;font-size:16px;">inclusion</p>
+<ul>
+<li>Driver Alowances</li>
+<li>Toll Tax and State Tax</li>
+</div>
+<div>
+<p style="font-weight:bold;font-size:16px;">&#8195 &#8195Extra Fare</p>
+<ul>
+<li>Waiting Charges <b>After 50 mins</b> will Rs.2/min</li>
+<li>Parking/Airport/Entry Charges will be <b>as applicable</b></li>
+<li>Night Charges(10PM to 5AM) is Rs.200</li>
+</ul>
+</div>
+<div>
+<p style="font-weight:bold;font-size:16px;">Other Information</p>
+<p><b><font-size="18px">Hilly Regions</font></b><br/>
+<font-color="grey">Ac will be switched off in hilly areas</font></p>
+<p><b><font-size="18px">Driver Details</font></b><br/>
+<font-color="grey">Driver detais will be shared up to 1 hr prior to departure</font></p>
+<p><b><font-size="18px">Delays</font></b><br/>
+<font-color="grey">Due to traffic or any other unavoidable reasons,pickup may be delayed by 30 mins.</font></p>
+<p><b><font-size="18px">Waiting Charges</font></b><br/>
+<font-color="grey">Driver would wait maximum 50 minutes from your scheduled pickup time at your pickup location. Post this your trip will may get cancelled. If there is a mutual agreement between customer and driver, waiting charges would be Rs 2 /Min</font></p>
+<p><b><font-size="18px">Receipts</font></b><br/>
+<font-color="grey">You need to collect the receipts from driver for any toll tax, state tax, night charges or extra km paid directly to the driver during the trip</font></p>
+</div>
+</div>
+<div class="fram2">
+<form name="frem1" action="confirm.html" onsubmit="return validate()" method="post">
+<p style="font-size:20px;font-weight:bold;">Trip details</p>
+<p><b>&#8195 Confirm Pick-up details</b><br/>
+<font-color="grey">&#8195 This will help the driver reach you on time</font></p>
+&#8195 <b>Pick-up address:</b><br/>
+&#8195 <input type="text" name="address" placeholder="Enter exact pick-up address/nearby location/buliding name">
+<hr width="95%">
+<div="frm2">
+<p style="font-weight:bold"; font-size:26px;">&#8195 Confirm Traveller informtion</p>
+<br/>
+&#8195 <b>Name</b><br/>
+&#8195 <input type="text" name="name" placeholder="Enter Full Name" >
+<br/>
+&#8195 <b>Email Id</b><font-color="grey" size="10px">(Your booking confirmation will be sent here)</font><br/>
+&#8195 <input type="email" name="email" placeholder="Enter Email ID">
+<br/>
+&#8195 <b>Contact Number</b><br/>
+&#8195 <input type="text" name="contact">
+<br/>
+&#8195 <input type="checkbox" class='mycls' name="agreement" value="on">I agree to the<a href="#" style="text-decoration:none;font-color:blue;font-size:14px"> User Agreement </a>
+<br/><br/>
+<button class="bton" >Confirm Booking</button>
+</div>
+</form>
+</div>
+
+
+
+<footer class="footer black" role="contentinfo">
+		<div class="wrap">
+			<div class="row">
+				<!-- Column -->
+				<div class="one-half">
+					<h6>About us</h6>
+					<p>Welcome to Alsafar. We Provide Cab.</p>
+				</div>
+				<!-- //Column -->
+				
+				<!-- Column -->
+				<div class="one-fourth">
+					<h6>Need help?</h6>
+					<p>Contact us via phone or email:</p>
+					<p class="contact-data"><span class="ico phone"></span> +91678679879</p>
+					<p class="contact-data"><span class="ico email"></span> <a href="mailto:help@transfers.com">help@alsafar.com</a></p>
+				</div>
+				<!-- //Column -->
+				
+				<!-- Column -->
+				<div class="one-fourth">
+					<h6>Follow us</h6>
+					<ul class="social">
+						<li class="facebook"><a href="#" title="facebook">facebook</a></li>
+						<li class="twitter"><a href="#" title="twitter">twitter</a></li>
+						<li class="gplus"><a href="#" title="gplus">google plus</a></li>
+						<li class="linkedin"><a href="#" title="linkedin">linkedin</a></li>
+						<li class="vimeo"><a href="#" title="vimeo">vimeo</a></li>
+						<li class="pinterest"><a href="#" title="pinterest">pinterest</a></li>
+					</ul>
+				</div>
+				<!-- //Column -->
+			</div>
+			
+			<div class="copy">
+				<p>Copyright 2016,Alsafar. All rights reserved. </p>
+				
+				<nav role="navigation" class="foot-nav">
+					<ul>
+						<li><a href="#" title="Home">Home</a></li>
+						<li><a href="#" title="Blog">Blog</a></li>
+						<li><a href="#" title="About us">About us</a></li>
+						<li><a href="#" title="Contact us">Contact us</a></li>
+						<li><a href="#" title="Terms of use">Terms of use</a></li>
+						<li><a href="#" title="Help">Help</a></li>
+						<li><a href="#" title="For partners">For partners</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</footer>
+	<!-- //Footer -->
+
+
+<script>
+function validate()
+{
+    
+    var a=document.forms["frem1"]["address"].value;
+    var b=document.forms["frem1"]["name"].value;
+    var c=document.forms["frem1"]["email"].value;
+    var de=document.forms["frem1"]["contact"].value;
+    var e=document.getElementsByClassName( 'mycls' );
+    var ischk=false;
+    if(a==""||a==null)
+    {
+        alert("Enter full address");
+        return false;
+    }
+    if(b==""||b==null)
+    {
+        alert("Enter your name");
+        return false;
+    }
+    if(c==""||c==null)
+    {
+        alert("Enter your email");
+        return false;
+    }
+    if(de==""||de==null)
+    {
+        alert("Enter your contact number");
+        return false;
+    }
+    digits=/^\d{10}$/;
+    if(de!=""||de!=null)
+    {
+         if(de.match(digits))
+         {
+              for (var i = 0; i < e.length; i++)
+              {
+                  if ( e[i].checked )
+                  {
+                      ischk = true;
+                  };
+              };
+              if ( ischk )
+              {
+                  return true;
+              }
+              else
+             {
+                 alert("Please ensure that you agree with the User Agreement");
+                 return false;
+             }
+         }
+             
+         else
+         {
+             alert("Not a valid Phone Number");
+             return false;
+         }
+         
+    }
+
+    
+}
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+var un=document.forms["frem1"]["uuname"].value;
+    var pas1=document.forms["frem1"]["psw"].value;
+    var pas2=document.forms["frem2"]["pswrd"].value;
+    var rpas=document.forms["frem2"]["psw-repeat"].value;
+    var b=document.forms["frem2"]["fname"].value;
+    var bl=document.forms["frem2"]["lname"].value;
+    var c=document.forms["frem2"]["email"].value;
+    var de=document.forms["frem2"]["mnumber"].value;
+    var e=document.getElementsByClassName( 'mycls' );
+    var ischk=false;
+    if(un==""||un==null)
+    {
+        alert("Enter username");
+        return false;
+    }
+    if(b==""||b==null)
+    {
+        alert("Enter your first name");
+        return false;
+    }
+    if(b==""||b==null)
+    {
+        alert("Enter your last name");
+        return false;
+    }
+    if(c==""||c==null)
+    {
+        alert("Enter your email");
+        return false;
+    }
+    if(de==""||de==null)
+    {
+        alert("Enter your contact number");
+        return false;
+    }
+    digits=/^\d{10}$/;
+    if(de!=""||de!=null)
+    {
+         if(de.match(digits))
+         {
+              return true;
+         }
+             
+         else
+         {
+             alert("Not a valid Phone Number");
+             return false;
+         }
+         
+    }
+    if(pas1==""||pas1==null||pas2==""||pas2==null)
+    {
+        alert("Enter pasword");
+        return false;
+    }
+    if(pas2!=""||pas2!=null)
+    {
+        if(rpas==""||rpas==null)
+        {
+            alert("Please confirm password");
+            return false;
+        }
+        else if(rpas!=pas2)
+        {
+            alert("Password did not match.... please try again");
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+    else
+    {
+        window.open('index.html');
+    }
+}

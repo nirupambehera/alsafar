@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap'); 	
+
+
+h1{
+	 position: relative;
+	 top:30px;
+	 right:750px;
+	 font-family: 'Righteous', cursive;
+	 color:#ADD8E6;
+	 font-size:69pt;
+	}
+
+input{
+ 	position:absolute;
+	left:1295px;
+ 	top:-19px;
+	height:100px;
+	width:40px;
+	opacity:0;
+	cursor:pointer;}
+ul{
+    background:yellow;
+    border-style:solid;
+    position:absolute;
+    left:1200px;
+    display: none;
+    padding: 10px 0;
+    list-style:none;
+    border-color:yellow;
+    font-size:14px;
+    font-family:consolas;}
+	
+.avatar {
+  vertical-align: middle;
+  position:absolute;
+  left:1300px;
+  top:15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+
+img{ position:relative;
+	left:600px;
+	top:-80px}
+
+h2{
+	position: relative;
+	top:-150px; 
+	left:700px;
+	 font-family: 'Righteous', cursive;
+	  
+	 color:#ADD8E6;
+	 font-size:69pt;
+	
+	}
+body{
+	background-size:cover;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("kevin.jpg");
+	overflow-x:hidden;
+	overflow-y:hidden;}
+
+
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  font-family:consolas;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: yellow;
+}
+

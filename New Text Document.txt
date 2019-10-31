@@ -1,0 +1,10 @@
+<!DOCTYPE HTML>
+<head><title>Contact Us | Al-Safar</title></head>
+<style>
+</style>
+<body>
+<div>
+<img src="map.jpg"/>
+</div>
+</body>
+</html>
