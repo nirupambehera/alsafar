@@ -211,7 +211,7 @@ img.avatar {
 
 <div id="id01" class="modal">
   
-  <form name="frem1" method="post" onsubmit="return validate()" action="index.html" class="modal-content animate">
+  <form name="frem1" method="post" onsubmit="return validate()" class="modal-content animate">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="avatar.png" alt="Avatar" class="avatar">
@@ -242,7 +242,7 @@ img.avatar {
 
 <div id="id02" class="modal">
   
-  <form class="modal-content animate"  method="post" onsubmit="return val()" name="frem2" action="index.html">
+  <form class="modal-content animate"  method="post" onsubmit="return val()" name="frem2">
 
     <div class="container">
       <h1>Sign Up</h1>
@@ -313,6 +313,10 @@ function validate()
         alert("Enter password");
         return false;
     }
+    else
+    {
+	    window.open("index.html");
+    }
 }
 
 function val()
@@ -381,6 +385,10 @@ function val()
         return false;
     }   
     
+    else
+    {
+	    window.open("index.html");
+    }
 }
 </script>
 
