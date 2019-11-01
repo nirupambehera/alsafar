@@ -250,35 +250,24 @@ function validate()
         return false;
     }
     digits=/^\d{10}$/;
-    if(de!=""||de!=null)
+    if(!de.match(digits))
     {
-         if(de.match(digits))
-         {
-              for (var i = 0; i < e.length; i++)
-              {
-                  if ( e[i].checked )
-                  {
-                      ischk = true;
-                  };
-              };
-              if ( ischk )
-              {
-                  return true;
-              }
-              else
-             {
-                 alert("Please ensure that you agree with the User Agreement");
-                 return false;
-             }
-         }
-             
-         else
-         {
-             alert("Not a valid Phone Number");
+         alert("Not a valid Phone Number");
              return false;
-         }
-         
-    }
+     }
+    
+        for (var i = 0; i < e.length; i++)
+        {
+            if ( e[i].checked )
+            {
+                ischk = true;
+            };
+        };
+        if ( !ischk )
+              {
+                  alert("Please ensure that you agree with the User Agreement");
+                 return false;
+              }
     
     else
     {
