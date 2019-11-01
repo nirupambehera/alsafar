@@ -137,7 +137,7 @@ input[type=text],input[type=email]
 </div>
 </div>
 <div class="fram2">
-<form name="frem1" action="confirm.html" onsubmit="return validate()" method="post">
+<form name="frem1" onsubmit="return validate()" method="post">
 <p style="font-size:20px;font-weight:bold;">Trip details</p>
 <p><b>&#8195 Confirm Pick-up details</b><br/>
 <font-color="grey">&#8195 This will help the driver reach you on time</font></p>
@@ -279,7 +279,11 @@ function validate()
          }
          
     }
-
+    
+    else
+    {
+	    window.open("confirm.html");
+    }
     
 }
 </script>
